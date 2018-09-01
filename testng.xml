@@ -1,0 +1,23 @@
+<suite name="FastSpring Tests" verbose="1">
+  <test name="Automation Tests">
+    <groups>
+
+      <define name="API">
+        <include name="getInfo" />
+      </define>
+
+      <define name="tobeincluded">
+        <include name="testu" />
+      </define>
+
+
+      <run>
+        <include name="include-group" />
+       <exclude name="exclude-group" />
+      </run>
+    </groups>
+    <classes>
+      <class name="test.java.qa.fastspring.ProductServices" />
+    </classes>
+  </test>
+</suite>
